@@ -72,11 +72,11 @@ Você deve subir o código-fonte da sua solução para um repositório git e nos
 IMPORTANTE:
 
     Certifique-se de que teremos acesso ao seu repositório, sendo importante que ele esteja público.
-    Solicitamos gentilmente que qualquer referência à Maxiprod seja removida de todos os arquivos antes da publicação.
+    Solicitamos gentilmente que qualquer referência à ******** seja removida de todos os arquivos antes da publicação.
     Caso se sinta à vontade, você pode implementar recursos adicionais desde que os mesmos não afetem o funcionamento dos já especificados nesse documento.
 
 
-Dúvidas: Caso tenha alguma dúvida, envie um e-mail para rh@maxiprod.com.br com o título "Dúvida teste técnico Desenvolvimento".
+Dúvidas: Caso tenha alguma dúvida, envie um e-mail para ************** com o título "Dúvida teste técnico Desenvolvimento".
 
 
 Organização da entrega
