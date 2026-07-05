@@ -34,7 +34,7 @@ function App() {
     <>
       <div style={styles.container}>
       <header style={styles.header}>
-        <h1 style={styles.mainTitle}>💰 Sistema de Controle de Gastos Residenciais</h1>
+        <h1 style={styles.mainTitle}>💰💰 Sistema de Controle de Gastos Residenciais 💰💰</h1>
         <p style={styles.subtitle}>Gerencie despesas, receitas e balanço familiar de forma transparente</p>
       </header>
 
