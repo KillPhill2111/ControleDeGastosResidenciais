@@ -13,7 +13,7 @@ namespace backend.Models
         public string Nome {get;set;}=String.Empty;
         //Definições obrigatorios da idade de usuario
         [Required(ErrorMessage ="A idade da pessoa é obrigatória! ")]
-        [Range(0,15, ErrorMessage ="Insiria uma idade válida1")]
+        [Range(0,150, ErrorMessage ="Insiria uma idade válida!!!")]
         public int Idade{get;set;}
 
         public List<Transacao> Transacoes{get;set;}=new ();

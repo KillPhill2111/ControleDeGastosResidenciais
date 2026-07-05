@@ -34,9 +34,23 @@ export default function CadastroPessoas({ onPessoasModificadas, pessoas, fetchPe
       setNome('');
       setIdade('');
       fetchPessoas();
-      onPessoasModificadas(); // atualiza a aba de totais e transações
+      onPessoasModificadas(); 
     } catch (err: any) {
-      setErro(err.response?.data || 'Erro ao cadastrar pessoa.');
+      console.error("Erro completo retornado pela API:", err.response?.data);
+      
+      
+      if (err.response?.data?.errors) {
+        const mensagensDeErro = Object.values(err.response.data.errors).flat().join(' ');
+        setErro(mensagensDeErro);
+      } 
+      
+      else if (typeof err.response?.data === 'string') {
+        setErro(err.response.data);
+      } 
+      
+      else {
+        setErro('Erro ao processar o cadastro no servidor.');
+      }
     }
   };
 

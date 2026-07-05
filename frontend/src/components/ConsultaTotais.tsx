@@ -34,8 +34,12 @@ export default function ConsultaTotais({ atualizarSinal }: ConsultaTotaisProps) 
     return <div style={{ padding: '20px', textAlign: 'center', color: '#718096' }}>Carregando dados financeiros...</div>;
   }
 
-  if (!dados) {
-    return <div style={{ padding: '20px', textAlign: 'center', color: '#e53e3e' }}>Erro ao carregar o painel financeiro.</div>;
+  if (carregando|| !dados ||!dados.geral) {
+    return (
+      <div style={{ background: '#fff', padding: '24px', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', textAlign: 'center', color: '#718096' }}>
+        Carregando balanço financeiro...
+      </div>
+    )
   }
 
   return (
